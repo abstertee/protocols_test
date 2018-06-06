@@ -64,7 +64,7 @@ class ViewController: NSViewController {
     
     func runChecks() {
         let firewallObject = StatusTabChecks(imageView: firewallIconStatus, spinner: firewallSpinner, statusLabel: firewallStatusText, check: StatusTab().firewallCheck())
-        let osupdateObject = StatusTabChecks(imageView: osUpdateStatusIcon, spinner: osUpdateSpinner, statusLabel: osUpdateStatusText, check: OSUpdate().long_osUpdateCheck()) 
+        let osupdateObject = StatusTabChecks(imageView: osUpdateStatusIcon, spinner: osUpdateSpinner, statusLabel: osUpdateStatusText, check: OSUpdate().short_osUpdateCheck()) 
         //debugPrint(firewallObject)
         //debugPrint(firewallObject.check[0...1])
         checksArray.append(firewallObject)
