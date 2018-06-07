@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D01369E320C9DBD5005E2EA6 /* BackGroundCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01369E220C9DBD5005E2EA6 /* BackGroundCheck.swift */; };
+		D01369E520C9E4D3005E2EA6 /* MixedCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01369E420C9E4D3005E2EA6 /* MixedCheck.swift */; };
 		D025A93F20C6FAD3002158FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D025A93E20C6FAD3002158FE /* AppDelegate.swift */; };
 		D025A94120C6FAD3002158FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D025A94020C6FAD3002158FE /* ViewController.swift */; };
 		D025A94320C6FAD5002158FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D025A94220C6FAD5002158FE /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D01369E220C9DBD5005E2EA6 /* BackGroundCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackGroundCheck.swift; sourceTree = "<group>"; };
+		D01369E420C9E4D3005E2EA6 /* MixedCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixedCheck.swift; sourceTree = "<group>"; };
 		D025A93B20C6FAD3002158FE /* protocols.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = protocols.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D025A93E20C6FAD3002158FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D025A94020C6FAD3002158FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +66,8 @@
 				D025A94220C6FAD5002158FE /* Assets.xcassets */,
 				D025A94420C6FAD5002158FE /* Main.storyboard */,
 				D025A94E20C6FAF9002158FE /* StatusTab.swift */,
+				D01369E220C9DBD5005E2EA6 /* BackGroundCheck.swift */,
+				D01369E420C9E4D3005E2EA6 /* MixedCheck.swift */,
 				D025A95020C6FB21002158FE /* ShellCommands.swift */,
 				D025A94720C6FAD5002158FE /* Info.plist */,
 				D025A94820C6FAD5002158FE /* protocols.entitlements */,
@@ -101,6 +107,11 @@
 				TargetAttributes = {
 					D025A93A20C6FAD3002158FE = {
 						CreatedOnToolsVersion = 9.4;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -141,6 +152,8 @@
 			files = (
 				D025A95120C6FB21002158FE /* ShellCommands.swift in Sources */,
 				D025A94F20C6FAF9002158FE /* StatusTab.swift in Sources */,
+				D01369E520C9E4D3005E2EA6 /* MixedCheck.swift in Sources */,
+				D01369E320C9DBD5005E2EA6 /* BackGroundCheck.swift in Sources */,
 				D025A94120C6FAD3002158FE /* ViewController.swift in Sources */,
 				D025A93F20C6FAD3002158FE /* AppDelegate.swift in Sources */,
 			);
@@ -277,7 +290,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = protocols/protocols.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = Z6H9QCRMVB;
@@ -296,7 +308,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = protocols/protocols.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = Z6H9QCRMVB;

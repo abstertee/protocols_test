@@ -706,7 +706,7 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="protocols" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="590" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pf9-Rr-2Bm">
@@ -715,7 +715,7 @@
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="firewallIcon" id="fs9-Nf-8rz"/>
                             </imageView>
                             <progressIndicator wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" maxValue="100" bezeled="NO" indeterminate="YES" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="i2h-Rb-Ngt">
-                                <rect key="frame" x="49" y="177" width="32" height="32"/>
+                                <rect key="frame" x="49" y="162" width="32" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </progressIndicator>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kum-7s-kap">
@@ -728,9 +728,9 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xLH-Hc-S1K">
-                                <rect key="frame" x="168" y="13" width="81" height="32"/>
+                                <rect key="frame" x="165" y="13" width="87" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Spo-v4-YH6">
+                                <buttonCell key="cell" type="push" title="Refresh" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Spo-v4-YH6">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -748,10 +748,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="6lD-Z8-q8U"/>
                             </imageView>
-                            <progressIndicator wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" maxValue="100" bezeled="NO" indeterminate="YES" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="Mc1-LL-zZN">
-                                <rect key="frame" x="49" y="49" width="32" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                            </progressIndicator>
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sj9-5U-Ujy">
                                 <rect key="frame" x="95" y="61" width="144" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -766,6 +762,33 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="GvX-qp-hsS"/>
                             </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xMJ-WR-8d8">
+                                <rect key="frame" x="279" y="187" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="jamfIcon" id="zvl-6j-FXQ"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cQy-b2-Zlp">
+                                <rect key="frame" x="279" y="215" width="38" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="6Cp-t9-Kv7"/>
+                            </imageView>
+                            <progressIndicator wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" maxValue="100" bezeled="NO" indeterminate="YES" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="oAm-Pn-Qio">
+                                <rect key="frame" x="303" y="177" width="32" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </progressIndicator>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zMh-do-sz4">
+                                <rect key="frame" x="341" y="180" width="144" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Multiline Label" id="8iC-79-wjq">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <progressIndicator wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" maxValue="100" bezeled="NO" indeterminate="YES" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="Mc1-LL-zZN">
+                                <rect key="frame" x="57" y="72" width="32" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </progressIndicator>
                         </subviews>
                     </view>
                     <connections>
@@ -773,6 +796,10 @@
                         <outlet property="firewallIconStatus" destination="EdF-6q-avm" id="CdL-Vv-4jp"/>
                         <outlet property="firewallSpinner" destination="i2h-Rb-Ngt" id="cna-gr-mvH"/>
                         <outlet property="firewallStatusText" destination="Kum-7s-kap" id="5h3-md-FU3"/>
+                        <outlet property="jamfLogo" destination="xMJ-WR-8d8" id="Alc-Io-xHc"/>
+                        <outlet property="jamfSpinner" destination="oAm-Pn-Qio" id="tgB-Ah-Y1k"/>
+                        <outlet property="jamfStatusIcon" destination="cQy-b2-Zlp" id="J5t-9I-OJ2"/>
+                        <outlet property="jamfStatusText" destination="zMh-do-sz4" id="xT6-zy-T4I"/>
                         <outlet property="osUpdateLogo" destination="Fgp-xe-cnI" id="Jwr-b1-e72"/>
                         <outlet property="osUpdateSpinner" destination="Mc1-LL-zZN" id="X2p-Oi-8wS"/>
                         <outlet property="osUpdateStatusIcon" destination="93W-ve-Znd" id="wPK-wb-0hC"/>
@@ -782,11 +809,12 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="130" y="655"/>
         </scene>
     </scenes>
     <resources>
         <image name="firewallIcon" width="512" height="480"/>
+        <image name="jamfIcon" width="364" height="364"/>
         <image name="softwareupdate" width="512" height="512"/>
     </resources>
 </document>

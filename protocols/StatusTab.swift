@@ -12,14 +12,44 @@ class StatusTab {
     func firewallCheck() -> Array<String> {
         let status = ShellCommand().shell("defaults", "read", "/Library/Preferences/com.apple.alf.plist", "globalstate")
         //print(status)
-        //sleep(5)
+        
         if status.contains("1"){
             return ["good", "Firewall is enabled"]
         } else {
             return ["bad", "Firewall is disabled"]
         }
     }
+    
+    // This is Check JAMF
+    func checkJamf() -> Array<String> {
+        // Check if Binaries are installed
+        let JamfBinPath = FileManager.default
+        if (JamfBinPath.fileExists(atPath: "/usr/local/bin/jamf") == false ) {
+            //debugPrint("JAMF Binaries Not installed.")
+            return ["bad", "JAMF Binaries Not installed."]
+        }
+        // Check if system is in enrolled
+        let jamfEnrollStatus: String = (ShellCommand().shell("/usr/bin/profiles","-C"))
+        //print(jamfEnrollStatus)
+        //Log().printToLog(entry: jamfEnrollStatus)
+        if jamfEnrollStatus.lowercased().range(of:("00000000-0000-0000-A000-4A414D460003").lowercased()) == nil {
+            // debugPrint("Not enrolled in JSS.")
+            return ["bad", "System is missing the MDM enrollment profile."]
+        }
+        
+        let jamfConnectivity: String = (ShellCommand().shell("/usr/local/bin/jamf", "checkJSSConnection", "-retry", "3"))
+        //debugPrint(jamfConnectivity)
+        //Log().printToLog(entry: jamfConnectivity)
+        if jamfConnectivity.lowercased().range(of:"available") == nil {
+            //debugPrint("Connected")
+            return ["bad", "There is no connectivity to the JSS."]
+        }
+        return ["good", "JAMF installed & system enrolled."]
+    }
+
+    
 }
+
 
 class OSUpdate {
     func short_osUpdateCheck() -> Array<String> {
